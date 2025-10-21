@@ -14,4 +14,7 @@ extend the following prompt with a clearer workflow definition and detailed task
 - Step 2 (Query pipe):
   input: filedir, text query -> gem request  prompt(improve)="generate 10 keywords to find the requested component within the provided id list(loop thotugh nx graph and provide all ids as list) using a similarity search(ss). -> embed queries and (all node ids (nid_embed_struct) of the nx.graph (nid_embed_struct)) -> save in two sepparate dicts with format "key:embedding" -> for each component of nid_embed_struct :: perform a similarity search -> save the resutl in (sum the results ) -> return top 5 nid_embed_struct of the with highest score 
 
-   
+extras:
+- use clear oneliner comments before each fuction/method call and at the start of each method to intepret
+- use creative emojicons
+- include a r.txt (requiremens)
